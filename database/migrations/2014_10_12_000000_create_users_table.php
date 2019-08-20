@@ -23,7 +23,7 @@ class CreateUsersTable extends Migration
             $table->string('phone');
             $table->string('tools');
             $table->string('password', 60);
-            $table->enum('access', array('user', 'admin'));
+            $table->enum('access', array('user', 'admin'))->default('user');
             $table->rememberToken();
             $table->timestamps();
         });

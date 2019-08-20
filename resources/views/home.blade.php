@@ -11,6 +11,9 @@
         <li data-target="#myCarouselx" data-slide-to="2"></li>
         <li data-target="#myCarouselx" data-slide-to="3"></li>
         <li data-target="#myCarouselx" data-slide-to="4"></li>
+        <li data-target="#myCarouselx" data-slide-to="5"></li>
+        <li data-target="#myCarouselx" data-slide-to="6"></li>
+        <li data-target="#myCarouselx" data-slide-to="7"></li>
         
       </ol>
       <div class="carousel-inner" role="listbox">
@@ -44,6 +47,27 @@
         </div>
         <div class="item">
           <img class="fifth-slide" src="{{ asset('img/4.jpeg') }}" alt="Fifth slide">
+          <div class="container">
+            <div class="carousel-caption">
+            </div>
+          </div>
+        </div>
+          <div class="item">
+          <img class="sixth-slide" src="{{ asset('img/5.jpeg') }}" alt="Fifth slide">
+          <div class="container">
+            <div class="carousel-caption">
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="seventh-slide" src="{{ asset('img/6.jpeg') }}" alt="Fifth slide">
+          <div class="container">
+            <div class="carousel-caption">
+            </div>
+          </div>
+        </div>
+          <div class="item">
+          <img class="eigth-slide" src="{{ asset('img/7.jpeg') }}" alt="Fifth slide">
           <div class="container">
             <div class="carousel-caption">
             </div>

@@ -42,17 +42,19 @@
             <span class="icon-bar"></span>  
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/">
-                    <img src="{{ asset('img/logo.png') }}" alt="">
+          <a class="navbar-brand" href="/" style="padding-top: 0px">
+                  <span> <img src="{{ asset('img/logo.png') }}" style="margin-top: 15px"></span>
+                 Sustainable Lifestyles
+
                 </a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
 
-          <ul class="nav navbar-nav">
+         <!--  <ul class="nav navbar-nav">
             <li class="{{ Route::currentRouteName() === 'home' ? 'active' : null }}"><a href="{{ route('home') }}">Home</a></li>
             <li class="{{ Route::currentRouteName() === 'about' ? 'active' : null }}"><a href="{{ route('about') }}">About</a></li>
           </ul>
-  
+   -->
 
           <ul class="nav navbar-nav navbar-right">
             @if(Auth::check())
