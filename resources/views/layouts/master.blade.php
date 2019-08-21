@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="apple-touch-icon" href="{{ asset('apple-touch-icon.png') }}">
-    <link rel="icon" type="img/ico" href="{{ asset('img/ch-logo.png') }}">
+    <link rel="icon" type="img/ico" href="{{ asset('favicon.ico') }}">
 
     <link rel="stylesheet" href="//bootswatch.com/flatly/bootstrap.min.css">
     <link rel="stylesheet" href="{{ elixir('css/app.css') }}">
