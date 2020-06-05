@@ -54,7 +54,7 @@ return [
     |
     */
 
-    'from' => ['address' => "noreply@easytripschristchurch.com", 'name' => "Easy Trips CHCH"],
+    'from' => ['address' => "sustainablelifestyles@changehub.net", 'name' => "Sustainable Lifestyle"],
 
     /*
     |--------------------------------------------------------------------------

@@ -4,7 +4,8 @@
 @section('content')
   <!-- Main jumbotron for a primary marketing message or call to action -->
   <div id="new">
-      <h1>New Trip</h1>
+      <h1>Lifestyle Mapping</h1>
+      <h3>Welcome to Step 1 of your personalised lifestyle mapping.</h3>
       <p>Please fill in some details here.</p>
 <div class="container">
       {!! Form::open(['url' => 'new']) !!}
