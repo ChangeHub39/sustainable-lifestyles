@@ -15,10 +15,11 @@
 Route::group(['middleware' => ['littlegatekeeper']], function()
 {
 
-    Route::get('/', ['as' => 'home',    'uses' => 'PagesController@home']);
+
 
 });
 
+Route::get('/', ['as' => 'home',    'uses' => 'PagesController@home']);
 
 Route::get('about',             ['as' => 'about',   'uses' => 'PagesController@about']);
 Route::get('about/contact',     ['as' => 'contact', 'uses' => 'PagesController@contact']);
