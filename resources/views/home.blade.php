@@ -226,7 +226,7 @@
         @auth
             <p class="center"><a class="btn btn-primary btn-lg" href="dashboard" role="button">Get Started &raquo;</a></p>
         @elseauth
-            <p class="center"><a class="btn btn-primary btn-lg" href="{{ route('register') }}" role="button">Get Started &raquo;</a></p>
+            <p class="center"><a class="btn btn-primary btn-lg" href="/register" role="button">Get Started &raquo;</a></p>
         @endauth
 
         <!-- Example row of columns -->
