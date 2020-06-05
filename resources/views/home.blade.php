@@ -211,7 +211,7 @@
 
         </div>
 
-        <div class="row">
+        <div class="row" style="margin-top: 20px; font-size: 18px; margin-bottom: 10px;">
             <div class="col-xs-12 col-md-6 col-md-offset-3 text-center">
                 <p>
                     <strong>Step 1</strong> Lifestyle mapping
