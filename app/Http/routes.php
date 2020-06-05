@@ -11,7 +11,8 @@
 |
 */
 
-Route::get('/',                 ['as' => 'home',    'uses' => 'PagesController@home']);
+
+Route::get('/',                 ['as' => 'home',    'uses' => 'PagesController@home', 'middleware' => 'littlegatekeeper']);
 Route::get('about',             ['as' => 'about',   'uses' => 'PagesController@about']);
 Route::get('about/contact',     ['as' => 'contact', 'uses' => 'PagesController@contact']);
 

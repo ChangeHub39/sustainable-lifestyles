@@ -13,7 +13,8 @@
         "doctrine/dbal": "^2.5",
         "guzzlehttp/guzzle": "^6.0",
         "illuminate/html": "^5.0",
-        "laravelbook/ardent": "^3.4"
+        "laravelbook/ardent": "^3.4",
+        "spatie/laravel-littlegatekeeper": "^1.1"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
