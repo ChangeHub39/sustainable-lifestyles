@@ -137,16 +137,16 @@
         </a>
     </div>
 
-    <div class="container-fluid">
-        <div id="jumbotext">
-            <div class="container">
-                <h1>Welcome to the Sustainable Lifestyle Platform</h1>
 
-                <p>We’re creating a New Zealand experiment where we help people make small lifestyle changes to reduce
-                    their environmental impact. Small changes by a lot of people add up to big changes.</p>
-            </div>
+    <div id="jumbotext">
+        <div class="container">
+            <h1>Welcome to the Sustainable Lifestyle Platform</h1>
+
+            <p>We’re creating a New Zealand experiment where we help people make small lifestyle changes to reduce
+                their environmental impact. Small changes by a lot of people add up to big changes.</p>
         </div>
     </div>
+
 
     <div class="container">
         <div class="padding">
@@ -213,21 +213,25 @@
 
         <div class="row">
             <div class="col-xs-12 col-md-6 col-md-offset-3 text-center">
-                <ul>
-                    <li><strong>Step 1</strong> Lifestyle mapping</li>
-                    <li><strong>Step 2</strong> Personalised plan with top 10 actions you can take to reduce your emissions</li>
-                    <li><strong>Step 3 (Optional)</strong> Sign up for a 30 challenge to see how much carbon emissions you can save
-                        with some simple lifestyle changes</li>
-                </ul>
+                <p>
+                    <strong>Step 1</strong> Lifestyle mapping
+                </p>
+                <p>
+                    <strong>Step 2</strong> Personalised plan with top 10 actions you can take to reduce your emissions
+                </p>
+                <p>
+                    <strong>Step 3 (Optional)</strong> Sign up for a 30 challenge to see how much carbon emissions you can save
+                    with some simple lifestyle changes
+                </p>
 
             </div>
         </div>
 
-        @auth
+        @if(auth()->check())
             <p class="center"><a class="btn btn-primary btn-lg" href="dashboard" role="button">Get Started &raquo;</a></p>
-        @elseauth
+        @else
             <p class="center"><a class="btn btn-primary btn-lg" href="/register" role="button">Get Started &raquo;</a></p>
-        @endauth
+        @endif
 
         <!-- Example row of columns -->
 
