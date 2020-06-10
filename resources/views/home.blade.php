@@ -230,7 +230,7 @@
         @if(auth()->check())
             <p class="center"><a class="btn btn-primary btn-lg" href="dashboard" role="button">Get Started &raquo;</a></p>
         @else
-            <p class="center"><a class="btn btn-primary btn-lg" href="/register" role="button">Get Started &raquo;</a></p>
+            <p class="center"><a class="btn btn-primary btn-lg" href="/auth/register" role="button">Get Started &raquo;</a></p>
         @endif
 
         <!-- Example row of columns -->

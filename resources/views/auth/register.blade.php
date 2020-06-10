@@ -4,7 +4,7 @@
 
     <div class="container">
         <div class="padding">
-            <div class="register">
+            <div class="register" >
                 {!! Form::open(['route' => 'auth.store', 'class' => 'form-horizontal', 'id' => 'register']) !!}
 
                 <h1>Register</h1>
@@ -53,7 +53,7 @@
 
                 <div class="form-group required">
                     <label for="interests" class="control-label">What are you interested in? (Select One)</label>
-                    {!! Form::select('interests', array('Taking personalised actions' => 'Taking personalised actions', 'Knowing my carbon footprint and offsetting my emissions' => 'Knowing my carbon footprint and offsetting my emissions', 'Both' => 'Both',), null, ['class' => 'form-control', 'name' => 'interests'] ) !!}
+                    {!! Form::select('interests', array('Taking personalised actions' => 'Taking personalised actions', 'Knowing my carbon footprint and offsetting my emissions' => 'Knowing my carbon footprint and offsetting my emissions', 'Both' => 'Both'), null, ['class' => 'form-control', 'name' => 'interests'] ) !!}
                 </div>
 
 {{--                <div class="form-group required {{ $errors->has('tools') ? 'has-error text-danger' : '' }}">--}}
