@@ -61,17 +61,29 @@ class TripController extends Controller
      * @param  Request  $request
      * @return Response
      */
-    public function store(CreateScheduleRequest $request)
+    public function store(Requests\CreateResultRequest $request)
     {
-        
 
-        $schedule = new Bus($request->all());
+
+        $reesult = new App\Result($request->all());
         $submittingUser = Auth::user()->id;
-        $schedule->user()->associate($request->user());
-        $schedule->save();
-        return redirect('mytrips/'.$submittingUser)
-            ->with('status.warning', 'Your request has been submitted, and is pending a reply.');
+        $reesult->user()->associate($request->user());
+        $reesult->save();
+        return redirect('/dashboard')
+            ->with('status.success', 'Thanks, Your mapping has been submitted.');
     }
+
+//    public function store(CreateScheduleRequest $request)
+//    {
+//
+//
+//        $schedule = new Bus($request->all());
+//        $submittingUser = Auth::user()->id;
+//        $schedule->user()->associate($request->user());
+//        $schedule->save();
+//        return redirect('mytrips/'.$submittingUser)
+//            ->with('status.warning', 'Your request has been submitted, and is pending a reply.');
+//    }
 
     /**
      * Display the specified resource.

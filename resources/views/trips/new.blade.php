@@ -37,29 +37,37 @@
                 {!! Form::label('title', 'How many car trips per week?') !!}
                 <div class="row">
                     <div class="col-md-4">
-                        {!! Form::label('less_than_3km', '<3km') !!}
-                        {!! Form::text('less_than_3km', null, ['class' => 'form-control', 'placeholder' => '0']) !!}
+                        {!! Form::label('car_less_than_3km', '<3km') !!}
+                        {!! Form::text('car_less_than_3km', null, ['class' => 'form-control', 'placeholder' => '0']) !!}
                     </div>
                     <div class="col-md-4">
-                        {!! Form::label('less_than_3km', '3-10km') !!}
-                        {!! Form::text('three_to_ten', null, ['class' => 'form-control', 'placeholder' => '0']) !!}
+                        {!! Form::label('car_three_to_ten', '3-10km') !!}
+                        {!! Form::text('car_three_to_ten', null, ['class' => 'form-control', 'placeholder' => '0']) !!}
                     </div>
                     <div class="col-md-4">
-                        {!! Form::label('greater_than_10', '>10km') !!}
-                        {!! Form::text('greater_than_10', null, ['class' => 'form-control', 'placeholder' => '0']) !!}
+                        {!! Form::label('car_greater_than_10', '>10km') !!}
+                        {!! Form::text('car_greater_than_10', null, ['class' => 'form-control', 'placeholder' => '0']) !!}
                     </div>
                 </div>
 
 
                 <br>
                 {!! Form::label('own_bike', 'Do you own a bike') !!}
-                {!! Form::select('days', array('Yes' => 'Yes' , 'No' => 'No'), null, ['class' => 'form-control'] ) !!}
+                {!! Form::select('own_bike', array('Yes' => 'Yes' , 'No' => 'No'), null, ['class' => 'form-control'] ) !!}
+
 
                 <br>
-
-                {!! Form::label('bike_trips', 'How many bike trips per week?') !!}
-                {!! Form::text('bike_trips', null, ['class' => 'form-control', 'placeholder' => '0']) !!}
-
+                {!! Form::label('public_transport', 'How many bike trips per week?') !!}
+                <div class="row">
+                    <div class="col-md-6">
+                        {!! Form::label('bike_trips', 'Number of trips') !!}
+                        {!! Form::text('bike_trips', null, ['class' => 'form-control', 'placeholder' => '0']) !!}
+                    </div>
+                    <div class="col-md-6">
+                        {!! Form::label('bike_kms', 'Approx KMs per trip') !!}
+                        {!! Form::text('bike_kms', null, ['class' => 'form-control', 'placeholder' => '0']) !!}
+                    </div>
+                </div>
 
                 <br>
                 {!! Form::label('public_transport', 'How many public transport trips per week?') !!}
@@ -69,7 +77,7 @@
                         {!! Form::text('public_transport_trips', null, ['class' => 'form-control', 'placeholder' => '0']) !!}
                     </div>
                     <div class="col-md-6">
-                        {!! Form::label('public_transport_kms', 'Approx KMs') !!}
+                        {!! Form::label('public_transport_kms', 'Approx KMs per trip') !!}
                         {!! Form::text('public_transport_kms', null, ['class' => 'form-control', 'placeholder' => '0']) !!}
                     </div>
                 </div>
@@ -82,10 +90,14 @@
                         {!! Form::text('rideshare_trips', null, ['class' => 'form-control', 'placeholder' => '0']) !!}
                     </div>
                     <div class="col-md-6">
-                        {!! Form::label('rideshare_kms', 'Approx KMs') !!}
+                        {!! Form::label('rideshare_kms', 'Approx KMs per trip') !!}
                         {!! Form::text('rideshare_kms', null, ['class' => 'form-control', 'placeholder' => '0']) !!}
                     </div>
                 </div>
+
+                <br>
+                {!! Form::label('carshare', 'Enter the name of any car sharing platfroms you use?') !!}
+                {!! Form::text('carshare', null, ['class' => 'form-control', 'placeholder' => 'E.g. Yourdrive']) !!}
 
 
                 <h3 style="padding-top: 20px; padding-bottom: 10px;">2. Waste</h3>
@@ -125,7 +137,7 @@
                 <br>
 
                 {!! Form::label('smart_meter', 'Do you have a smart meter?') !!}
-                {!! Form::select('days', array('Yes' => 'Yes' , 'No' => 'No'), null, ['class' => 'form-control'] ) !!}
+                {!! Form::select('smart_meter', array('Yes' => 'Yes' , 'No' => 'No'), null, ['class' => 'form-control'] ) !!}
 
                 <br>
 
@@ -139,7 +151,7 @@
 
                 <br>
                 {!! Form::label('woodburner', 'Do you have a woodburner for heating?') !!}
-                {!! Form::select('days', array('Yes' => 'Yes' , 'No' => 'No'), null, ['class' => 'form-control'] ) !!}
+                {!! Form::select('woodburner', array('Yes' => 'Yes' , 'No' => 'No'), null, ['class' => 'form-control'] ) !!}
 
                 <br>
                 {!! Form::label('burn_material', 'What do you burn?') !!}

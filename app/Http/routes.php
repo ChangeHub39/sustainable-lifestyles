@@ -19,6 +19,8 @@
 //
 //});
 
+Route::get('/password', ['as' => 'password_protect',  'uses' => 'PagesController@passwordProtect']);
+Route::post('/password', ['as' => 'password.check',  'uses' => 'PagesController@passwordCheck']);
 
 Route::get('/', ['as' => 'home',    'uses' => 'PagesController@home']);
 Route::get('about',             ['as' => 'about',   'uses' => 'PagesController@about']);
